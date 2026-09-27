@@ -1,0 +1,19 @@
+{
+  "name": "Clara Higgins",
+  "slug": "clara-higgins",
+  "role": "Creative Arts Director & Music Facilitator",
+  "department": "arts",
+  "experience": "7+ Years Experience",
+  "qualification": "B.F.A. Fine Arts & Kodály Music Certificate",
+  "photo": "assets/images/gallery-art.jpg",
+  "quote": "Art allows little hands to tell stories that words cannot yet express.",
+  "bio": "Clara leads our dynamic visual arts and percussion music studios. She inspires children to experiment fearlessly with colors, sculpting dough, and musical instruments, celebrating the creative journey in every piece.",
+  "specialties": [
+    "Process Art Techniques",
+    "Kodály Music Method",
+    "Clay & Texture Sculpting",
+    "Puppetry & Stage Drama"
+  ],
+  "email": "clara.higgins@starkids.edu",
+  "order": 3
+}

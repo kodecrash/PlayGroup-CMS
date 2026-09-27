@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Contact Us & Admissions - Star Kids",
+  "metaDescription": "Get in touch with Star Kids admissions. Schedule a private guided campus tour, ask questions, or enroll your child.",
+  "hero": {
+    "badge": "Get in Touch",
+    "title": "Contact & Admissions",
+    "subtitle": "We'd love to welcome you and your family for a private guided campus visit.",
+    "breadcrumb": "Contact Us"
+  },
+  "sections": [
+    {
+      "type": "feature_grid",
+      "badge": "Visit & Contact",
+      "title": "Ways to Connect With Us",
+      "subtitle": "Reach out by phone, email, or schedule a tour directly with our admissions coordinator.",
+      "cards": [
+        {
+          "title": "Main Campus",
+          "description": "742 Evergreen Meadow Way, Springfield, CA 90210",
+          "icon": "📍",
+          "color": "coral"
+        },
+        {
+          "title": "Direct Admissions",
+          "description": "+91 9799032872 / 1-800-KID-CARE (Mon-Fri)",
+          "icon": "📞",
+          "color": "purple"
+        },
+        {
+          "title": "Email Inquiries",
+          "description": "hello@starkids.edu / admissions@starkids.edu",
+          "icon": "✉️",
+          "color": "green"
+        },
+        {
+          "title": "Office Hours",
+          "description": "Mon - Fri: 7:30 AM - 6:00 PM | Sat Tours: 9 AM - 1 PM",
+          "icon": "⏰",
+          "color": "teal"
+        }
+      ]
+    },
+    {
+      "type": "cta_banner",
+      "title": "Ready to Enroll Your Child at Star Kids?",
+      "description": "Spaces are limited in our low-ratio classrooms. Reserve your child's spot today.",
+      "primaryButtonText": "Inquire Online",
+      "primaryButtonLink": "#contactForm",
+      "secondaryButtonText": "View Programmes",
+      "secondaryButtonLink": "programs.html"
+    }
+  ]
+}

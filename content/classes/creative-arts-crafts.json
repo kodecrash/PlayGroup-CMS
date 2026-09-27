@@ -1,0 +1,18 @@
+{
+  "title": "Creative Arts & Sensory Crafts",
+  "slug": "creative-arts-crafts",
+  "category": "Arts & Crafts",
+  "ageGroup": "2 - 5 Years",
+  "days": "Tuesdays & Thursdays",
+  "timing": "10:30 AM - 11:45 AM",
+  "instructor": "Ms. Clara Higgins (B.F.A. Fine Arts)",
+  "image": "assets/images/gallery-art.jpg",
+  "summary": "Exploring textures, color mixing, clay sculpting, collage building, and process-based art that celebrates creativity over perfection.",
+  "learningOutcomes": [
+    "Fine motor grip & hand-eye coordination",
+    "Color theory & spatial awareness",
+    "Self-esteem through expressive art display",
+    "Tactile tolerance with diverse textured materials"
+  ],
+  "order": 1
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Parent & Toddler Sensory Play Masterclass",
+  "slug": "parent-toddler-sensory-workshop",
+  "date": "Saturday, Dec 12, 2026",
+  "isoDate": "2026-12-12T10:00:00+05:30",
+  "time": "10:00 AM - 11:30 AM",
+  "category": "Arts & Crafts",
+  "badge": "Parent & Child",
+  "featured": false,
+  "venue": "Indoor Sensory Play Studio",
+  "address": "742 Evergreen Meadow Way, Springfield",
+  "ageGroup": "Ages 1.5 - 3 Years with Parents",
+  "capacity": "20 Pairs",
+  "price": "Free Entry",
+  "image": "assets/images/gallery-art.jpg",
+  "summary": "Guided tactile play, edible finger paints, scented sensory dough, and developmental tips from our child psychologists for positive early attachment.",
+  "description": "An intimate, joyous workshop designed to strengthen parent-child bonding through creative sensory stimulation and practical guidance on toddler communication and emotional regulation.",
+  "schedule": [
+    { "timeSlot": "10:00 AM", "activity": "Welcome Circle & Rhyme Time", "details": "Gentle music & movement" },
+    { "timeSlot": "10:25 AM", "activity": "Sensory Bins & Organic Dough", "details": "Tactile motor exploration" },
+    { "timeSlot": "11:00 AM", "activity": "Q&A with Child Psychologist", "details": "Tips for toddler milestones" }
+  ],
+  "registration": {
+    "isOpen": true,
+    "buttonText": "RSVP Workshop",
+    "link": "#registerModal"
+  }
+}

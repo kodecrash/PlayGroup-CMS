@@ -1,0 +1,32 @@
+{
+  "pageTitle": "Teachers & Faculty - Star Kids",
+  "metaDescription": "Meet our compassionate, certified early childhood specialists and dedicated educators at Star Kids.",
+  "hero": {
+    "badge": "Our Educators",
+    "title": "Meet Our Faculty",
+    "subtitle": "Passionate educators devoted to inspiring, guiding, and loving every child.",
+    "breadcrumb": "Teachers"
+  },
+  "sections": [
+    {
+      "type": "text_section",
+      "badge": "Educational Excellence",
+      "title": "Certified Early Childhood Mentors",
+      "subtitle": "100% degreed and certified in early childhood pedagogy, first aid, and positive discipline.",
+      "content": "Our faculty comprises experienced educators with specialized backgrounds in early cognitive development, speech therapy, childhood psychology, and creative arts.\n\nWe maintain regular professional training in progressive Montessori, Reggio Emilia, and play-based pedagogical standards.",
+      "image": "assets/images/teacher-sarah.jpg",
+      "imagePosition": "right",
+      "buttonText": "Schedule a Teacher Meeting",
+      "buttonLink": "contact.html"
+    },
+    {
+      "type": "cta_banner",
+      "title": "Meet Our Teachers in Person",
+      "description": "Schedule a guided tour to see our educators interact with children in classroom settings.",
+      "primaryButtonText": "Book Campus Tour",
+      "primaryButtonLink": "contact.html",
+      "secondaryButtonText": "Explore Programmes",
+      "secondaryButtonLink": "programs.html"
+    }
+  ]
+}

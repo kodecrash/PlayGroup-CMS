@@ -1,0 +1,688 @@
+backend:
+  name: github
+  repo: kodecrash/PlayGroup-CMS
+  branch: main
+  squash_merges: true
+
+local_backend: true
+
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+display_url: "http://localhost:3000"
+
+collections:
+  # --------------------------------------------------------------------------
+  # 1. GLOBAL HEADER & FOOTER (STANDALONE CATEGORY)
+  # --------------------------------------------------------------------------
+  - name: "global_settings"
+    label: "🌐 Global Header & Footer"
+    delete: false
+    files:
+      - name: "header_footer"
+        label: "Header, Navigation & Footer Settings"
+        file: "content/settings/site.json"
+        fields:
+          - label: "Top Utility Bar"
+            name: "topBar"
+            widget: "object"
+            fields:
+              - { label: "Contact Phone Number", name: "phone", widget: "string", default: "+91 9799032872" }
+              - { label: "Contact Email Address", name: "email", widget: "string", default: "hello@starkids.edu" }
+              - { label: "Working Hours / Schedule", name: "workingHours", widget: "string", default: "Mon - Fri: 7:30 AM - 6:00 PM" }
+              - { label: "Facebook URL", name: "facebookUrl", widget: "string", default: "https://facebook.com", required: false }
+              - { label: "Instagram URL", name: "instagramUrl", widget: "string", default: "https://instagram.com", required: false }
+              - { label: "YouTube URL", name: "youtubeUrl", widget: "string", default: "https://youtube.com", required: false }
+
+          - label: "Main Header & Navigation"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Brand Logo First Word (Accent)", name: "logoPrefix", widget: "string", default: "Star" }
+              - { label: "Brand Logo Second Word", name: "logoSuffix", widget: "string", default: "Kids" }
+              - { label: "Header CTA Button Text", name: "ctaText", widget: "string", default: "Contact Us" }
+              - { label: "Header CTA Button Link", name: "ctaLink", widget: "string", default: "contact.html" }
+              - label: "Navigation Menu Links"
+                name: "navLinks"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Target URL", name: "url", widget: "string" }
+
+          - label: "Global Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "About Text / Description", name: "aboutText", widget: "text", default: "Dedicated to providing safe, joyful, and comprehensive early childhood development and preschool education for ages 1 to 6." }
+              - { label: "Column 2 Title", name: "col2Title", widget: "string", default: "Navigation" }
+              - label: "Column 2 Links"
+                name: "col2Links"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Target URL", name: "url", widget: "string" }
+              - { label: "Column 3 Title", name: "col3Title", widget: "string", default: "Our Programmes" }
+              - label: "Column 3 Links"
+                name: "col3Links"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Target URL", name: "url", widget: "string" }
+              - { label: "Column 4 Title (Newsletter)", name: "col4Title", widget: "string", default: "Stay Connected" }
+              - { label: "Column 4 Description", name: "col4Text", widget: "text", default: "Subscribe to our weekly parent newsletter for school activities, events, and parenting tips." }
+              - { label: "Copyright Notice", name: "copyright", widget: "string", default: "&copy; 2026 Star Kids. All rights reserved." }
+              - { label: "Sub-Credit Note", name: "subCredit", widget: "string", default: "Made with ❤️ for young learners & families." }
+
+  # --------------------------------------------------------------------------
+  # 2. PAGES & LAYOUTS (SITE PAGES)
+  # --------------------------------------------------------------------------
+  - name: "pages"
+    label: "📄 Pages & Layouts"
+    delete: false
+    files:
+      # 1. HOME PAGE
+      - name: "home_page"
+        label: "🏠 Home Page (index.html)"
+        file: "content/pages/home.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Top Badge Tag", name: "badge", widget: "string", default: "✨ Best Childcare & Early Learning Center 2026" }
+              - { label: "Hero Title Headline", name: "title", widget: "string", default: "We are a Childcare Professional" }
+              - { label: "Subtitle Description", name: "subtitle", widget: "text" }
+              - { label: "Primary Button Text", name: "primaryBtnText", widget: "string", default: "Explore Programmes" }
+              - { label: "Primary Button Link", name: "primaryBtnLink", widget: "string", default: "programs.html" }
+              - { label: "Secondary Button Text", name: "secondaryBtnText", widget: "string", default: "Schedule a Tour" }
+              - { label: "Secondary Button Link", name: "secondaryBtnLink", widget: "string", default: "contact.html" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "Feature Highlights Grid"
+                name: "feature_grid"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Cards"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Card Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
+                      - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
+              - label: "Programs Showcase Embed"
+                name: "programs_showcase"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", default: "Ages 1 to 6" }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Popular Programs" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - { label: "CTA Button Text", name: "buttonText", widget: "string", default: "View All Classes & Schedules", required: false }
+                  - { label: "CTA Button Link", name: "buttonLink", widget: "string", default: "classes.html", required: false }
+              - label: "Testimonials Showcase Embed"
+                name: "testimonials_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", default: "Parent Voices" }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Loved by Over 1,200+ Families" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Milestones / Stats Counters"
+                name: "stats_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "By the Numbers" }
+                  - label: "Counters"
+                    name: "stats"
+                    widget: "list"
+                    fields:
+                      - { label: "Number", name: "number", widget: "string" }
+                      - { label: "Suffix", name: "suffix", widget: "string", default: "+" }
+                      - { label: "Label Title", name: "label", widget: "string" }
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Campus Facilities Grid"
+                name: "facilities_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Our Facilities" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Facilities"
+                    name: "facilities"
+                    widget: "list"
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌿" }
+              - label: "Comparison Matrix Table"
+                name: "comparison_matrix"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Table Title", name: "title", widget: "string" }
+                  - { label: "Subtitle Description", name: "subtitle", widget: "text", required: false }
+                  - label: "Comparison Rows"
+                    name: "rows"
+                    widget: "list"
+                    fields:
+                      - { label: "Feature Name", name: "feature", widget: "string" }
+                      - { label: "Column 1 Value", name: "col1", widget: "string" }
+                      - { label: "Column 2 Value", name: "col2", widget: "string" }
+                      - { label: "Column 3 Value", name: "col3", widget: "string" }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 2. ABOUT US PAGE
+      - name: "about_page"
+        label: "ℹ️ About Us Page (about.html)"
+        file: "content/pages/about.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Our Heritage" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "About Star Kids" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "About Us" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "Milestones / Stats Counters"
+                name: "stats_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "By the Numbers" }
+                  - label: "Counters"
+                    name: "stats"
+                    widget: "list"
+                    fields:
+                      - { label: "Number", name: "number", widget: "string" }
+                      - { label: "Suffix", name: "suffix", widget: "string", default: "+" }
+                      - { label: "Label Title", name: "label", widget: "string" }
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Campus Facilities Grid"
+                name: "facilities_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Our Facilities" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Facilities"
+                    name: "facilities"
+                    widget: "list"
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌿" }
+              - label: "Feature Highlights Grid"
+                name: "feature_grid"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Cards"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Card Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
+                      - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 3. PROGRAMMES PAGE
+      - name: "programs_page"
+        label: "🎒 Programmes Page (programs.html)"
+        file: "content/pages/programs.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Early Childhood Pathways" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "Our Programmes" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "Our Programmes" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Feature Highlights Grid"
+                name: "feature_grid"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Cards"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Card Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
+                      - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
+              - label: "Programs Showcase Embed"
+                name: "programs_showcase"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", default: "Core Stages" }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Explore Our Learning Stages" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Comparison Matrix Table"
+                name: "comparison_matrix"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Table Title", name: "title", widget: "string" }
+                  - { label: "Subtitle Description", name: "subtitle", widget: "text", required: false }
+                  - label: "Comparison Rows"
+                    name: "rows"
+                    widget: "list"
+                    fields:
+                      - { label: "Feature Name", name: "feature", widget: "string" }
+                      - { label: "Column 1 Value", name: "col1", widget: "string" }
+                      - { label: "Column 2 Value", name: "col2", widget: "string" }
+                      - { label: "Column 3 Value", name: "col3", widget: "string" }
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 4. CLASSES & CURRICULUM PAGE
+      - name: "classes_page"
+        label: "🎨 Classes & Curriculum (classes.html)"
+        file: "content/pages/classes.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Early Learning Modules" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "Classes & Curriculum" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "Classes" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "Feature Highlights Grid"
+                name: "feature_grid"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Cards"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Card Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
+                      - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 5. EVENTS & CALENDAR PAGE
+      - name: "events_page"
+        label: "📅 Events & Calendar (events.html)"
+        file: "content/pages/events.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Community & Celebrations" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "Events & Calendar" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "Events" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 6. TEACHERS & FACULTY PAGE
+      - name: "teachers_page"
+        label: "👩‍🏫 Teachers & Faculty (teachers.html)"
+        file: "content/pages/teachers.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Our Educators" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "Meet Our Faculty" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "Teachers" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
+      # 7. CONTACT & ADMISSIONS PAGE
+      - name: "contact_page"
+        label: "📞 Contact & Admissions (contact.html)"
+        file: "content/pages/contact.json"
+        fields:
+          - { label: "Page Title / SEO", name: "pageTitle", widget: "string" }
+          - { label: "SEO Meta Description", name: "metaDescription", widget: "text", required: false }
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Tag", name: "badge", widget: "string", default: "Get in Touch" }
+              - { label: "Hero Title", name: "title", widget: "string", default: "Contact & Admissions" }
+              - { label: "Hero Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Breadcrumb Label", name: "breadcrumb", widget: "string", default: "Contact Us" }
+          - label: "Page Components / Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            types:
+              - label: "Feature Highlights Grid"
+                name: "feature_grid"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Cards"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Card Title", name: "title", widget: "string" }
+                      - { label: "Description", name: "description", widget: "text" }
+                      - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
+                      - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
+              - label: "Story / Text Section"
+                name: "text_section"
+                widget: "object"
+                fields:
+                  - { label: "Badge Tag", name: "badge", widget: "string", required: false }
+                  - { label: "Heading Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Content Body", name: "content", widget: "markdown" }
+                  - { label: "Featured Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Position", name: "imagePosition", widget: "select", options: ["right", "left"], default: "right" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+              - label: "FAQ Accordion"
+                name: "faq_section"
+                widget: "object"
+                fields:
+                  - { label: "Section Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+                  - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Questions & Answers"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+              - label: "Call to Action Banner"
+                name: "cta_banner"
+                widget: "object"
+                fields:
+                  - { label: "Banner Title", name: "title", widget: "string" }
+                  - { label: "Banner Description", name: "description", widget: "text" }
+                  - { label: "Primary Button Label", name: "primaryButtonText", widget: "string" }
+                  - { label: "Primary Button Link", name: "primaryButtonLink", widget: "string" }
+                  - { label: "Secondary Button Label", name: "secondaryButtonText", widget: "string", required: false }
+                  - { label: "Secondary Button Link", name: "secondaryButtonLink", widget: "string", required: false }
+              - label: "Custom Embed / HTML"
+                name: "custom_html"
+                widget: "object"
+                fields:
+                  - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
+                  - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }

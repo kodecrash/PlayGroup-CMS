@@ -1,0 +1,48 @@
+{
+  "badgeColor": "purple",
+  "stageBadge": "Stage 4: Primary Readiness",
+  "summary": "Comprehensive pre-primary mastery developing independent reading, addition/subtraction basics, STEAM coding blocks, public speaking presentation, and emotional resilience.",
+  "timing": "8:30 AM - 2:00 PM (Mon - Fri)",
+  "slug": "kindergarten-prep",
+  "featuredImage": "assets/images/about.jpg",
+  "curriculumPillars": [
+    {
+      "pillar": "Advanced Literacy",
+      "details": "Sight words, story comprehension, writing short paragraphs"
+    },
+    {
+      "pillar": "Mathematical Reasoning",
+      "details": "Addition, subtraction, time telling, money concepts"
+    },
+    {
+      "pillar": "Leadership & Ethics",
+      "details": "Empathy, conflict resolution, active listening, community projects"
+    }
+  ],
+  "order": 4,
+  "subtitle": "Confidence, Literacy & Primary School Readiness",
+  "title": "Kindergarten Preparatory",
+  "icon": "🎓",
+  "classSize": "1:8 Teacher Ratio",
+  "tuition": "$420 / Month",
+  "description": "Graduates of our Kindergarten Preparatory program enter primary school as confident, enthusiastic, and socially adept young leaders. We ensure your child is 100% prepared for top elementary admissions.",
+  "ageRange": "4 to 6 Years",
+  "highlights": [
+    {
+      "category": "Advanced Literacy",
+      "details": "Independent sentence reading & creative journal writing"
+    },
+    {
+      "category": "Robotics & Logic",
+      "details": "Robotics building blocks & introductory logic coding"
+    },
+    {
+      "category": "Public Speaking",
+      "details": "Show & Tell presentation & stage confidence"
+    },
+    {
+      "category": "Formal Graduation",
+      "details": "Formal graduation ceremony with cap and diploma"
+    }
+  ]
+}

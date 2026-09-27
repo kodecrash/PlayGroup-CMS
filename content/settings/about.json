@@ -1,0 +1,27 @@
+{
+  "heroTitle": "About Star Kids",
+  "storyBadge": "Our Story & Heritage",
+  "storyHeadline": "14 Years of Nurturing Joyful, Confident Young Learners",
+  "storyPara1": "Founded in 2012, Star Kids Nursery & Kindergarten began with a heartfelt mission: to create a second home where children feel cherished, challenged, and inspired. Over the past 14 years, our campus has blossomed into a leading early learning center recognized for balanced developmental pedagogy and joyful discovery.",
+  "storyPara2": "We believe every child is naturally curious, capable, and full of potential. By providing intentional play-based environments, certified educators with low child-to-teacher ratios, and research-backed STEAM activities, we lay an enduring foundation for academic success and emotional well-being.",
+  "mission": "To nurture every child's innate curiosity, resilience, and creativity through safe, compassionate, and research-backed play-based learning.",
+  "vision": "To be the premier early childhood education hub empowering confident, empathetic, and joyful lifelong learners.",
+  "director": {
+    "name": "Dr. Eleanor Vance, Ph.D.",
+    "title": "Founding Director & Child Development Specialist",
+    "photo": "assets/images/about-director.jpg",
+    "message": "Welcome to Star Kids! As parents and educators, we understand the immense trust you place in us when leaving your child in our care. Our promise is simple: we provide an enriching sanctuary where your little one is seen, supported, and celebrated for who they are."
+  },
+  "stats": [
+    { "number": 14, "suffix": "+", "label": "Years of Excellence", "subtitle": "Serving families since 2012" },
+    { "number": 1200, "suffix": "+", "label": "Happy Graduates", "subtitle": "Thriving in primary schools" },
+    { "number": 25, "suffix": "+", "label": "Expert Educators", "subtitle": "100% certified & CPR trained" },
+    { "number": 100, "suffix": "%", "label": "Safety Rating", "subtitle": "Biometric & sanitized daily" }
+  ],
+  "facilities": [
+    { "title": "Indoor Sensory Soft Gym", "description": "Custom padded climbing blocks, foam pits, and balance beams for gross motor agility.", "icon": "🤸" },
+    { "title": "Organic Vegetable Garden", "description": "Hands-on gardening beds where children plant seeds, water sprouts, and taste fresh veggies.", "icon": "🌱" },
+    { "title": "STEAM Maker Discovery Hub", "description": "Equipped with water channels, magnetic gears, wooden marble mazes, and building blocks.", "icon": "🔬" },
+    { "title": "Cozy Storytelling Nook & Library", "description": "Curated collection of 1,000+ picture books, soft floor cushions, and puppet theatre stage.", "icon": "📚" }
+  ]
+}

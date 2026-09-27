@@ -1,0 +1,83 @@
+{
+  "topBar": {
+    "phone": "+91 9799032872",
+    "email": "hello@starkids.edu",
+    "workingHours": "Mon - Fri: 7:30 AM - 6:00 PM",
+    "facebookUrl": "https://facebook.com",
+    "instagramUrl": "https://instagram.com",
+    "youtubeUrl": "https://youtube.com"
+  },
+  "header": {
+    "logoPrefix": "Star",
+    "logoSuffix": "Kids",
+    "ctaText": "Contact Us",
+    "ctaLink": "contact.html",
+    "navLinks": [
+      {
+        "label": "Home",
+        "url": "index.html"
+      },
+      {
+        "label": "About",
+        "url": "about.html"
+      },
+      {
+        "label": "Programmes",
+        "url": "programs.html"
+      },
+      {
+        "label": "Events",
+        "url": "events.html"
+      },
+      {
+        "label": "Contact Us",
+        "url": "contact.html"
+      }
+    ]
+  },
+  "footer": {
+    "col4Text": "Subscribe to weekly parent newsletter for school activities, events, and parenting tips.",
+    "col4Title": "Stay Connected",
+    "col3Title": "Our Programmes",
+    "col3Links": [
+      {
+        "label": "Toddler (1.5 - 2 Years)",
+        "url": "programs.html#programsList"
+      },
+      {
+        "label": "PlayGroup (2 - 3 Years)",
+        "url": "programs.html#programsList"
+      },
+      {
+        "label": "Nursery (3 - 4 Years)",
+        "url": "programs.html#programsList"
+      }
+    ],
+    "col2Title": "Navigation",
+    "col2Links": [
+      {
+        "label": "Home",
+        "url": "index.html"
+      },
+      {
+        "label": "About Us",
+        "url": "about.html"
+      },
+      {
+        "label": "Programmes",
+        "url": "programs.html"
+      },
+      {
+        "label": "Events & Calendar",
+        "url": "events.html"
+      },
+      {
+        "label": "Contact & Admissions",
+        "url": "contact.html"
+      }
+    ],
+    "copyright": "&copy; 2026 Star Kids. All rights reserved.",
+    "subCredit": "Made with ❤️ for young learners & families.",
+    "aboutText": "Dedicated to providing safe, joyful, and comprehensive early childhood development and preschool education for ages 1 to 6."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "pageTitle": "Star Kids - Childcare Professional & Early Learning",
+  "metaDescription": "Creating a nurturing, safe, and joyful preschool environment where young minds blossom, friendships flourish, and every developmental milestone is celebrated with care.",
+  "hero": {
+    "badge": "✨ Best Childcare & Early Learning Center 2026",
+    "title": "We are a Childcare Professional",
+    "subtitle": "Creating a nurturing, safe, and joyful preschool environment where young minds blossom, friendships flourish, and every developmental milestone is celebrated with care.",
+    "primaryBtnText": "Explore Programmes",
+    "primaryBtnLink": "programs.html",
+    "secondaryBtnText": "Schedule a Tour in",
+    "secondaryBtnLink": "contact.html "
+  },
+  "sections": [
+    {
+      "type": "programs_showcase",
+      "badge": "Ages 1 to 6",
+      "title": "Popular Programs",
+      "subtitle": "Age-appropriate educational tracks tailored to foster motor skills, social empathy, language mastery, and creative problem solving.",
+      "buttonText": "View All Classes & Schedules",
+      "buttonLink": "classes.html"
+    },
+    {
+      "type": "feature_grid",
+      "badge": "Why Parents Choose Star Kids",
+      "title": "A Safe, Joyful Sanctuary for Early Childhood Growth",
+      "subtitle": "Our curriculum balances structured foundational learning with joyful open-ended play.",
+      "cards": [
+        {
+          "title": "Certified Educators & Low Ratios",
+          "description": "Experienced early childhood educators with a 1:4 to 1:6 ratio for personalized attention.",
+          "icon": "🛡️",
+          "color": "coral"
+        },
+        {
+          "title": "Holistic Play-Based Pedagogy",
+          "description": "Sensory exploration, storytelling, STEAM inquiry, and motor skill development every day.",
+          "icon": "😊",
+          "color": "green"
+        },
+        {
+          "title": "Secure Campus & Daily Nutrition",
+          "description": "Biometric access, clean sanitization protocols, and balanced organic snacks.",
+          "icon": "📚",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "type": "testimonials_section",
+      "badge": "Parent Voices",
+      "title": "Loved by Over 1,200+ Families",
+      "subtitle": "Hear what parents say about their children's growth, happiness, and friendships at Star Kids."
+    },
+    {
+      "type": "cta_banner",
+      "title": "Ready to Experience Star Kids?",
+      "description": "Join our happy family of learners. Schedule a private guided tour of our modern campus today.",
+      "primaryButtonText": "Book Campus Tour",
+      "primaryButtonLink": "contact.html",
+      "secondaryButtonText": "Contact Admissions",
+      "secondaryButtonLink": "contact.html"
+    }
+  ]
+}

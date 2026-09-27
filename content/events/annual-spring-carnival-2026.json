@@ -1,0 +1,29 @@
+{
+  "title": "Annual Spring Carnival & Community Open House",
+  "slug": "annual-spring-carnival-2026",
+  "date": "Saturday, Oct 24, 2026",
+  "isoDate": "2026-10-24T09:00:00+05:30",
+  "time": "9:00 AM - 1:30 PM",
+  "category": "Community",
+  "badge": "Featured Event",
+  "featured": true,
+  "venue": "Main Courtyard & Adventure Garden",
+  "address": "742 Evergreen Meadow Way, Springfield",
+  "ageGroup": "All Ages (1.5 - 6 Yrs & Parents)",
+  "capacity": "80 Family Passes",
+  "price": "Free Admission",
+  "image": "assets/images/gallery-sports.jpg",
+  "summary": "Join our biggest family celebration of the season with interactive sensory stalls, live puppet theatre, bouncy castles, and campus tours with our teachers.",
+  "description": "Our Annual Spring Carnival brings together our entire school community for a day of joyful celebration, creative exploration, and family bonding. Experience live music, balloon crafting, organic snack stations, and meet our passionate educators in person.",
+  "schedule": [
+    { "timeSlot": "9:00 AM", "activity": "Welcome & Campus Gates Open", "details": "Registration badge pick-up and welcome drinks" },
+    { "timeSlot": "10:00 AM", "activity": "Live Puppet Theatre Show", "details": "Engaging interactive storytelling by guest puppeteers" },
+    { "timeSlot": "11:15 AM", "activity": "Mini Obstacle Course & Games", "details": "Safe physical challenges for toddlers and kindergarteners" },
+    { "timeSlot": "12:30 PM", "activity": "Community Picnic & Grand Raffle", "details": "Healthy snacks, fruit skewers, and prizes" }
+  ],
+  "registration": {
+    "isOpen": true,
+    "buttonText": "Register Family Pass",
+    "link": "#registerModal"
+  }
+}

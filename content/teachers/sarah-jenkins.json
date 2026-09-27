@@ -1,0 +1,19 @@
+{
+  "name": "Sarah Jenkins",
+  "slug": "sarah-jenkins",
+  "role": "Lead Early Childhood Educator & Curriculum Head",
+  "department": "preschool",
+  "experience": "10+ Years Experience",
+  "qualification": "M.Ed. Early Childhood Development (Columbia Univ)",
+  "photo": "assets/images/teacher-sarah.jpg",
+  "quote": "When children feel safe and heard, their curiosity becomes boundless.",
+  "bio": "Sarah has dedicated over a decade to crafting nurturing classroom environments where every child's individual voice is valued. She specializes in phonics foundations, emotional intelligence coaching, and inquiry-led exploration.",
+  "specialties": [
+    "Jolly Phonics Mastery",
+    "Reggio Emilia Approach",
+    "Social-Emotional Coaching",
+    "Pediatric First Aid Certified"
+  ],
+  "email": "sarah.jenkins@starkids.edu",
+  "order": 1
+}

@@ -1,0 +1,163 @@
+/* ==========================================================================
+   STAR KIDS - DECAP CMS CUSTOM ADMIN & PREVIEW STYLES
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-primary: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Fredoka', 'Outfit', cursive, sans-serif;
+  
+  --purple-dark: #2B1B48;
+  --purple-main: #5C3D8D;
+  --purple-light: #F3EEF9;
+  
+  --coral-main: #FF6B6B;
+  --coral-light: #FFF0F0;
+  --coral-hover: #E85555;
+  
+  --teal-main: #38B2AC;
+  --teal-light: #E6FFFA;
+  
+  --yellow-main: #F6AD55;
+  --yellow-light: #FFFAF0;
+  
+  --text-main: #2D3748;
+  --text-muted: #718096;
+  --bg-page: #FAF9F6;
+  --bg-card: #FFFFFF;
+  --border-light: #E2E8F0;
+  
+  --shadow-sm: 0 4px 12px rgba(43, 27, 72, 0.06);
+  --shadow-md: 0 10px 25px rgba(43, 27, 72, 0.1);
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+body {
+  font-family: var(--font-primary) !important;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+}
+
+/* Custom Decap CMS Header Styling */
+header[role="banner"] {
+  background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-main) 100%) !important;
+  box-shadow: 0 4px 20px rgba(43, 27, 72, 0.15) !important;
+}
+
+/* Preview Pane Styling */
+.preview-pane-container {
+  padding: 24px;
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  font-family: var(--font-primary);
+}
+
+.preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.preview-badge.coral { background: var(--coral-light); color: var(--coral-main); }
+.preview-badge.purple { background: var(--purple-light); color: var(--purple-main); }
+.preview-badge.teal { background: var(--teal-light); color: var(--teal-main); }
+.preview-badge.yellow { background: var(--yellow-light); color: #C05621; }
+
+.preview-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+}
+
+.preview-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background-color: #E2E8F0;
+}
+
+.preview-card-body {
+  padding: 24px;
+}
+
+.preview-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--purple-dark);
+  margin: 0 0 10px 0;
+}
+
+.preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.preview-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.preview-desc {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.preview-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.preview-list li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.preview-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--teal-main);
+  font-weight: bold;
+}
+
+.preview-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--coral-main) 0%, var(--coral-hover) 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 107, 107, 0.35);
+}

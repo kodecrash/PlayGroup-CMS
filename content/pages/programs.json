@@ -1,0 +1,117 @@
+{
+  "pageTitle": "Our Programmes - Star Kids Nursery & Kindergarten",
+  "metaDescription": "Explore our early childhood programs at Star Kids: Toddler (1.5 - 2 yrs), PlayGroup (2 - 3 yrs), and Nursery (3 - 4 yrs). Nurturing, safe, stage-based early learning.",
+  "hero": {
+    "badge": "Early Childhood Pathways",
+    "title": "Our Programmes",
+    "subtitle": "Holistic early childhood learning pathways designed for every developmental milestone.",
+    "breadcrumb": "Our Programmes"
+  },
+  "sections": [
+    {
+      "type": "feature_grid",
+      "badge": "Early Childhood Pathways",
+      "title": "Designed for Every Developmental Milestone",
+      "subtitle": "At Star Kids, our stage-by-stage programs provide loving guidance, joyful play, and foundational skills.",
+      "cards": [
+        {
+          "title": "Low Child-Teacher Ratios",
+          "description": "Ranging from 1:3 for Toddlers to 1:6 for Nursery, ensuring every child receives attentive care.",
+          "icon": "🛡️",
+          "color": "green"
+        },
+        {
+          "title": "Play-Based Learning",
+          "description": "Hands-on sensory bins, imaginative role-play, musical movement, and tactile exploration spark curiosity.",
+          "icon": "😊",
+          "color": "coral"
+        },
+        {
+          "title": "Holistic Development",
+          "description": "Equally nurturing motor agility, language milestones, emotional resilience, and early phonics.",
+          "icon": "📚",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "type": "programs_showcase",
+      "badge": "Core Stages",
+      "title": "Explore Our Learning Stages",
+      "subtitle": "Carefully sequenced stages from gentle transition toddlers to confident kindergarten scholars."
+    },
+    {
+      "type": "comparison_matrix",
+      "badge": "At-A-Glance Overview",
+      "title": "Programmes Comparison Matrix",
+      "subtitle": "Compare key features across Toddler, PlayGroup, and Nursery to find the right fit for your child.",
+      "rows": [
+        {
+          "feature": "Age Range",
+          "col1": "1.5 to 2 Years",
+          "col2": "2 to 3 Years",
+          "col3": "3 to 4 Years"
+        },
+        {
+          "feature": "Teacher : Child Ratio",
+          "col1": "1 : 3 Ratio",
+          "col2": "1 : 4 Ratio",
+          "col3": "1 : 6 Ratio"
+        },
+        {
+          "feature": "Schedule Options",
+          "col1": "Half Day (8:30 AM - 12:00 PM)",
+          "col2": "Half Day or Full Day (to 3:00 PM)",
+          "col3": "Full Day (8:30 AM - 3:30 PM)"
+        },
+        {
+          "feature": "Core Focus",
+          "col1": "Sensory exploration & attachment",
+          "col2": "Social skills & creative arts",
+          "col3": "Phonics, math & STEM inquiry"
+        },
+        {
+          "feature": "Outdoor Time Daily",
+          "col1": "45 mins (Soft courtyard)",
+          "col2": "60 mins (Activity playground)",
+          "col3": "75 mins (Playground & Garden)"
+        },
+        {
+          "feature": "Potty Training",
+          "col1": "Gentle Transition",
+          "col2": "Active Guided Training",
+          "col3": "Independent Restroom Habits"
+        }
+      ]
+    },
+    {
+      "type": "faq_section",
+      "badge": "Got Questions?",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common inquiries from parents about enrollment, safety, and schedules.",
+      "items": [
+        {
+          "question": "What is the enrollment process?",
+          "answer": "We encourage parents to book a guided campus tour. After the tour, you can submit an application form and schedule an observation visit for your child."
+        },
+        {
+          "question": "What are the school timings and after-school care options?",
+          "answer": "Standard programs run from 8:30 AM to 12:30 PM (Half Day) or 3:30 PM (Full Day). Extended care is available until 6:00 PM."
+        },
+        {
+          "question": "How are meals and allergies handled?",
+          "answer": "We provide fresh organic morning snacks and balanced hot lunches prepared in our dedicated kitchen. All dietary restrictions and allergies are strictly monitored."
+        }
+      ]
+    },
+    {
+      "type": "cta_banner",
+      "title": "Ready to Begin Your Child's Journey?",
+      "description": "Admissions are now open for the 2026-2027 academic term. Schedule a guided campus tour to meet our educators.",
+      "primaryButtonText": "Book Guided Campus Tour",
+      "primaryButtonLink": "contact.html",
+      "secondaryButtonText": "Contact Admissions Office",
+      "secondaryButtonLink": "contact.html"
+    }
+  ]
+}

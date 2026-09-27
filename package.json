@@ -1,0 +1,19 @@
+{
+  "name": "playgroup-cms",
+  "version": "1.0.0",
+  "description": "Star Kids - Decap CMS Website & Platform",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail -n \"CMS-PROXY,WEBSITE\" -c \"magenta,cyan\" \"npm run cms-proxy\" \"npm run serve\"",
+    "dev": "npm run start",
+    "cms-proxy": "decap-server",
+    "serve": "http-server . -p 3000 -c-1 --cors"
+  },
+  "dependencies": {
+    "decap-cms-app": "^3.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "decap-server": "^3.1.2",
+    "http-server": "^14.1.1"
+  }
+}

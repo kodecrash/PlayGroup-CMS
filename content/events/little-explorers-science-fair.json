@@ -1,0 +1,28 @@
+{
+  "title": "Little Explorers Science & STEAM Discovery Day",
+  "slug": "little-explorers-science-fair",
+  "date": "Wednesday, Dec 02, 2026",
+  "isoDate": "2026-12-02T10:00:00+05:30",
+  "time": "10:00 AM - 1:00 PM",
+  "category": "Science & Discovery",
+  "badge": "STEAM Workshop",
+  "featured": false,
+  "venue": "STEAM Maker Lab & Discovery Hub",
+  "address": "742 Evergreen Meadow Way, Springfield",
+  "ageGroup": "Ages 3 - 6 Years",
+  "capacity": "35 Children",
+  "price": "$10 / Child (Includes Material Kit)",
+  "image": "assets/images/gallery-science.jpg",
+  "summary": "Hands-on volcano bubbling, magnet mazes, plant sprout potting, and tactile sensory chemistry stations that spark curiosity and inquiry.",
+  "description": "Watch young eyes light up with wonder as they explore scientific concepts through hands-on experiments, safe sensory play, and guided discoveries led by our STEAM educators.",
+  "schedule": [
+    { "timeSlot": "10:00 AM", "activity": "Color Volcanoes & Fizzy Potions", "details": "Safe baking soda & natural dye reactions" },
+    { "timeSlot": "11:00 AM", "activity": "Magnetic Marble Runs", "details": "Gravity & magnetic force exploration" },
+    { "timeSlot": "12:00 PM", "activity": "Take-Home Sprout Planting", "details": "Planting sunflowers in eco-friendly cups" }
+  ],
+  "registration": {
+    "isOpen": true,
+    "buttonText": "Book STEAM Pass",
+    "link": "#registerModal"
+  }
+}

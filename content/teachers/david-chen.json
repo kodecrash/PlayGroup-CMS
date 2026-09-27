@@ -1,0 +1,19 @@
+{
+  "name": "David Chen",
+  "slug": "david-chen",
+  "role": "Montessori Toddler Specialist & Physical Coach",
+  "department": "toddler",
+  "experience": "8+ Years Experience",
+  "qualification": "AMI Montessori Certified & B.S. Kinesiology",
+  "photo": "assets/images/teacher-david.jpg",
+  "quote": "Movement is the child's first language; we honor their boundless physical joy.",
+  "bio": "David is renowned for his gentle patience and boundless energy. He leads our Toddler Explorers and youth movement courses, ensuring every milestone from balance to fine-motor manipulation is reached with confidence.",
+  "specialties": [
+    "Montessori Toddler Methods",
+    "Gross Motor Development",
+    "Non-Verbal Communication",
+    "Gentle Potty Training"
+  ],
+  "email": "david.chen@starkids.edu",
+  "order": 2
+}

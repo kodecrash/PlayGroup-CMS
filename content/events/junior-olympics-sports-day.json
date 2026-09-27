@@ -1,0 +1,28 @@
+{
+  "title": "Junior Olympics & Field Sports Day",
+  "slug": "junior-olympics-sports-day",
+  "date": "Friday, Nov 13, 2026",
+  "isoDate": "2026-11-13T09:30:00+05:30",
+  "time": "9:30 AM - 12:00 PM",
+  "category": "Sports",
+  "badge": "Active Fun",
+  "featured": false,
+  "venue": "Sunny Meadow Turf & Track",
+  "address": "742 Evergreen Meadow Way, Springfield",
+  "ageGroup": "Ages 2 - 6 Years",
+  "capacity": "50 Children",
+  "price": "Free for Enrolled Students",
+  "image": "assets/images/playground.jpg",
+  "summary": "A high-energy morning of mini hurdles, beanbag relays, parachute waves, and medal ceremonies emphasizing teamwork, motor skills, and sportsmanship.",
+  "description": "Every child is a champion at Star Kids! Our Junior Olympics celebrates healthy physical movement, coordination, and team spirit through fun-filled, non-competitive games designed by our early childhood physical education coaches.",
+  "schedule": [
+    { "timeSlot": "9:30 AM", "activity": "Torch Relay & Warm-up Dance", "details": "Fun musical stretching" },
+    { "timeSlot": "10:15 AM", "activity": "Beanbag Toss & Agility Cones", "details": "Stage-appropriate motor skill circuits" },
+    { "timeSlot": "11:30 AM", "activity": "Gold Medal & Ribbon Ceremony", "details": "Every participant receives their Star Ribbon!" }
+  ],
+  "registration": {
+    "isOpen": true,
+    "buttonText": "RSVP Student",
+    "link": "#registerModal"
+  }
+}

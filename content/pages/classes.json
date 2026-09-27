@@ -1,0 +1,64 @@
+{
+  "pageTitle": "Classes & Curriculum - Star Kids",
+  "metaDescription": "Discover our holistic curriculum modules in Arts & Crafts, Phonics, STEAM, Music & Movement, and Life Skills.",
+  "hero": {
+    "badge": "Early Learning Modules",
+    "title": "Classes & Curriculum",
+    "subtitle": "Inspiring hands-on activities that ignite a lifelong passion for discovery.",
+    "breadcrumb": "Classes"
+  },
+  "sections": [
+    {
+      "type": "text_section",
+      "badge": "Our Methodology",
+      "title": "Experiential Learning Across Every Discipline",
+      "subtitle": "Blending STEAM inquiry, creative arts, and gross motor play.",
+      "content": "Our curriculum modules are engineered around five core developmental pillars: **Sensory Arts**, **Phonics & Language Mastery**, **Musical Movement**, **STEAM Discovery**, and **Social-Emotional Life Skills**.\n\nEvery day combines joyful active exploration in specialized learning zones under the guidance of certified child development mentors.",
+      "image": "assets/images/art-music.jpg",
+      "imagePosition": "right",
+      "buttonText": "View Class Schedule",
+      "buttonLink": "contact.html"
+    },
+    {
+      "type": "feature_grid",
+      "badge": "Curriculum Modules",
+      "title": "Key Developmental Modules",
+      "subtitle": "Comprehensive activity stations rotating through every school day.",
+      "cards": [
+        {
+          "title": "Arts, Crafts & Sensory Clay",
+          "description": "Tactile molding, watercolor washes, paper collage, and finger painting.",
+          "icon": "🎨",
+          "color": "coral"
+        },
+        {
+          "title": "Phonics & Storytelling Circles",
+          "description": "Letter sound recognition, puppet shows, rhyme games, and vocabulary expansion.",
+          "icon": "📖",
+          "color": "purple"
+        },
+        {
+          "title": "Little STEAM Investigators",
+          "description": "Magnet sets, water wheel channels, balance scales, and nature specimen magnifying.",
+          "icon": "🔬",
+          "color": "teal"
+        },
+        {
+          "title": "Music, Rhythm & Gymnastics",
+          "description": "Percussion instruments, tempo clapping, obstacle tracks, and balance beams.",
+          "icon": "🎵",
+          "color": "yellow"
+        }
+      ]
+    },
+    {
+      "type": "cta_banner",
+      "title": "Explore Our Classrooms in Person",
+      "description": "Book a campus tour and watch our interactive class modules in action.",
+      "primaryButtonText": "Schedule a Campus Visit",
+      "primaryButtonLink": "contact.html",
+      "secondaryButtonText": "Enroll Now",
+      "secondaryButtonLink": "contact.html"
+    }
+  ]
+}

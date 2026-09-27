@@ -1,0 +1,18 @@
+{
+  "title": "Music, Rhythm & Toddler Yoga",
+  "slug": "music-movement-yoga",
+  "category": "Music & Movement",
+  "ageGroup": "1.5 - 5 Years",
+  "days": "Wednesdays & Fridays",
+  "timing": "11:00 AM - 12:15 PM",
+  "instructor": "Mr. David Chen (Certified Youth Yoga & Music Specialist)",
+  "image": "assets/images/gallery-music.jpg",
+  "summary": "Percussion rhythms, pentatonic instruments, joyful dancing, animal yoga poses, and mindfulness breathing for calm body regulation.",
+  "learningOutcomes": [
+    "Rhythm recognition and tempo matching",
+    "Body balance, flexibility, and core stability",
+    "Self-calming breathing techniques",
+    "Joyful musical appreciation and tempo awareness"
+  ],
+  "order": 3
+}

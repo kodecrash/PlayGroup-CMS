@@ -1,0 +1,19 @@
+{
+  "name": "Dr. Eleanor Vance",
+  "slug": "eleanor-vance",
+  "role": "Founding Director & Child Development Psychologist",
+  "department": "admin",
+  "experience": "16+ Years Experience",
+  "qualification": "Ph.D. Developmental Psychology (Stanford Univ)",
+  "photo": "assets/images/about-director.jpg",
+  "quote": "Our philosophy is simple: unconditional safety, boundless joy, and meaningful foundations.",
+  "bio": "Dr. Vance founded Star Kids with the vision of creating an oasis of joyful learning where modern child psychology and gentle, play-based methods merge seamlessly. She guides our staff training and leads parent education masterclasses.",
+  "specialties": [
+    "Child Psychology & Attachment",
+    "Early Neurodevelopment",
+    "Parent Guidance Workshops",
+    "School Readiness Assessment"
+  ],
+  "email": "director@starkids.edu",
+  "order": 4
+}

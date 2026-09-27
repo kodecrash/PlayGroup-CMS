@@ -1,0 +1,48 @@
+{
+  "pageTitle": "Events & School Calendar - Star Kids",
+  "metaDescription": "Stay updated with upcoming family workshops, seasonal festivals, sports days, and campus celebrations at Star Kids.",
+  "hero": {
+    "badge": "Community & Celebrations",
+    "title": "Events & Calendar",
+    "subtitle": "Join our vibrant community events, parent workshops, and celebration days.",
+    "breadcrumb": "Events"
+  },
+  "sections": [
+    {
+      "type": "text_section",
+      "badge": "Community Connection",
+      "title": "Connecting Families Through Joyful Campus Gatherings",
+      "subtitle": "Parent participation and community joy are at the heart of our school life.",
+      "content": "Throughout the academic year, Star Kids hosts an exciting calendar of family carnivals, seasonal science expos, junior sports tournaments, and parenting workshops.\n\nEvents are open to current families, alumni, and prospective parents seeking to discover our campus culture.",
+      "image": "assets/images/gallery-sports.jpg",
+      "imagePosition": "right",
+      "buttonText": "RSVP for Upcoming Event",
+      "buttonLink": "#eventsGrid"
+    },
+    {
+      "type": "faq_section",
+      "badge": "Event FAQs",
+      "title": "Frequently Asked Questions About Events",
+      "subtitle": "Details regarding guests, ticketing, parking, and photography.",
+      "items": [
+        {
+          "question": "Can prospective parents attend Star Kids events?",
+          "answer": "Yes! Community festivals, workshops, and science fairs are open to all families with advance RSVP."
+        },
+        {
+          "question": "Is parking available on campus for large events?",
+          "answer": "Yes, our main visitor parking and adjacent designated overflow lot provide ample complimentary parking."
+        }
+      ]
+    },
+    {
+      "type": "cta_banner",
+      "title": "Never Miss an Event at Star Kids",
+      "description": "Subscribe to our school newsletter or book a private campus tour today.",
+      "primaryButtonText": "Schedule a Campus Tour",
+      "primaryButtonLink": "contact.html",
+      "secondaryButtonText": "Contact Event Coordinator",
+      "secondaryButtonLink": "contact.html"
+    }
+  ]
+}

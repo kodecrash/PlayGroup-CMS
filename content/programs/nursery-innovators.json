@@ -1,0 +1,27 @@
+{
+  "title": "Nursery Programme",
+  "slug": "nursery-innovators",
+  "stageBadge": "Stage 3: Early Academic & STEM",
+  "subtitle": "STEAM Foundations & Phonics Fun",
+  "ageRange": "3 to 4 Years",
+  "timing": "8:30 AM - 1:00 PM (Mon - Fri)",
+  "classSize": "1:6 Teacher Ratio",
+  "tuition": "$380 / Month",
+  "badgeColor": "purple",
+  "icon": "📚",
+  "featuredImage": "assets/images/program-nursery.jpg",
+  "summary": "Our Nursery curriculum develops pre-reading phonics, numeracy logic, early scientific observation, and expressive confidence. Children thrive through interactive storytelling circles, hands-on counting labs, gardening, and dramatic theater.",
+  "highlights": [
+    { "category": "Early Phonics & Letters", "details": "Sound recognition, letter tracing & rhymes" },
+    { "category": "Math & Logic", "details": "Counting counters, geometric shapes & patterns" },
+    { "category": "Discovery & Nature", "details": "Plant growth, weather charts & simple physics" },
+    { "category": "Confidence & Speech", "details": "Show-and-tell, dramatic play & puppet shows" }
+  ],
+  "curriculumPillars": [
+    { "pillar": "Literacy & Phonics", "details": "Letter sound associations, rhyming games, writing name traces" },
+    { "pillar": "Numeracy & Logic", "details": "Sorting colors and shapes, counting 1-30, measuring volume" },
+    { "pillar": "Scientific Inquiry", "details": "Plant life cycles, weather tracking, magnetic attraction" }
+  ],
+  "description": "Nursery Innovators bridges playful wonder with academic readiness. Children develop phonetic awareness, number fluency, and critical thinking with excitement and enthusiasm.",
+  "order": 3
+}

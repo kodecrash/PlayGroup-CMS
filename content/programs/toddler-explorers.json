@@ -1,0 +1,27 @@
+{
+  "title": "Toddler Programme",
+  "slug": "toddler-explorers",
+  "stageBadge": "Stage 1: Foundational Care",
+  "subtitle": "First Steps in Joyful Discovery",
+  "ageRange": "1.5 to 2 Years",
+  "timing": "8:30 AM - 12:00 PM (Flexible 3 or 5 Days)",
+  "classSize": "1:3 Teacher Ratio",
+  "tuition": "$320 / Month",
+  "badgeColor": "green",
+  "icon": "👶",
+  "featuredImage": "assets/images/program-toddler.jpg",
+  "summary": "Our Toddler program is designed as a gentle bridge from home to the wider world. In a soothing, padded environment, toddlers discover sensory textures, practice early gross motor movement, explore expressive sounds, and build secure emotional bonds.",
+  "highlights": [
+    { "category": "Sensory Stimulation", "details": "Foam climbing, water & sand play" },
+    { "category": "Language Initiation", "details": "Nursery rhymes, gestures & rhythm" },
+    { "category": "Motor Dexterity", "details": "Stacking soft blocks, grasping & sorting" },
+    { "category": "Nurturing Care", "details": "Assisted feeding & gentle routine pacing" }
+  ],
+  "curriculumPillars": [
+    { "pillar": "Sensory & Motor Growth", "details": "Climbing soft blocks, grasping organic wooden toys, finger painting" },
+    { "pillar": "Language & Babbles", "details": "Nursery rhymes, baby sign language integration, storybook corners" },
+    { "pillar": "Emotional Security", "details": "Predictable gentle rhythms that help toddlers feel safe away from home" }
+  ],
+  "description": "Our Toddler Explorers program is carefully crafted to ease the transition between home and early school life. With soft, padded environments and warm, attentive educators, your little one builds trust, curiosity, and early vocabulary.",
+  "order": 1
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Little Botanists & STEAM Discovery",
+  "slug": "nature-steam-discovery",
+  "category": "STEAM & Science",
+  "ageGroup": "3 - 6 Years",
+  "days": "Tuesdays & Fridays",
+  "timing": "1:00 PM - 2:15 PM",
+  "instructor": "Dr. Eleanor Vance, Ph.D.",
+  "image": "assets/images/gallery-garden.jpg",
+  "summary": "Outdoor organic garden tending, insect observation, water flow testing, and beginner building block architecture.",
+  "learningOutcomes": [
+    "Ecological empathy & understanding plant growth",
+    "Basic scientific method: hypothesis, test, observation",
+    "Physics intuition through ramps and levers",
+    "Patience and daily environmental stewardship"
+  ],
+  "order": 4
+}

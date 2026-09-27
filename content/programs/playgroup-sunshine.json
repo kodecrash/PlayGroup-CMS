@@ -1,0 +1,27 @@
+{
+  "title": "PlayGroup Programme",
+  "slug": "playgroup-sunshine",
+  "stageBadge": "Stage 2: Social Exploration",
+  "subtitle": "Imaginative Play & Social Friendship",
+  "ageRange": "2 to 3 Years",
+  "timing": "8:30 AM - 12:30 PM (Mon - Fri)",
+  "classSize": "1:4 Teacher Ratio",
+  "tuition": "$350 / Month",
+  "badgeColor": "coral",
+  "icon": "🎨",
+  "featuredImage": "assets/images/program-playgroup.jpg",
+  "summary": "PlayGroup is the stage where communication blossoms and peer friendships take root. Children engage in vibrant creative arts, cooperative pretend-play stations, tactile modeling clay, songs, and guided toilet training independence.",
+  "highlights": [
+    { "category": "Creative Arts", "details": "Finger-painting, play-dough & color mixing" },
+    { "category": "Social Development", "details": "Turn-taking, sharing & circle conversations" },
+    { "category": "Active Play", "details": "Parachute games, tricycle relays & soft hurdles" },
+    { "category": "Self-Help Skills", "details": "Handwashing, shoe cubby & toilet training" }
+  ],
+  "curriculumPillars": [
+    { "pillar": "Social Collaboration", "details": "Taking turns, verbalizing emotions, cooperative building games" },
+    { "pillar": "Creative Expression", "details": "Clay shaping, brush painting, percussion instruments" },
+    { "pillar": "Self-Help Skills", "details": "Handwashing, putting on shoes, mealtime autonomy" }
+  ],
+  "description": "PlayGroup Sunshine encourages joyful self-expression and cooperative play. Children develop speech clarity, fine motor precision, and lasting friendships in a colorful, stimulating environment.",
+  "order": 2
+}
