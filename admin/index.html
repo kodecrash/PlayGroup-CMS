@@ -12,9 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="admin.css">
-
-  <!-- Netlify Identity Widget for Git Gateway / Auth if hosted on Netlify -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <!-- Decap CMS Application Bundle -->
@@ -23,17 +20,5 @@
   <!-- Custom Star Kids Preview Templates -->
   <script src="preview.js"></script>
 
-  <script>
-    // Handle Netlify Identity Login redirect
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>

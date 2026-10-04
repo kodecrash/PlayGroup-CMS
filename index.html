@@ -567,19 +567,8 @@
     </div>
   </footer>
 
-  <!-- Netlify Identity Widget for handling invite & auth redirects -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+  <!-- Netlify Identity: handles invite & password reset links, then opens the CMS -->
+  <script type="module" src="js/identity-callback.js"></script>
   <script src="js/content-loader.js"></script>
   <script src="js/main.js"></script>
 </body>
