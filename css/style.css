@@ -1373,6 +1373,8 @@ h6 {
   position: relative;
   background: linear-gradient(135deg, #eb6d4e 0%, #f38f76 100%);
   padding: 6rem 0;
+  margin: 0;
+  margin-bottom: 0;
   color: #ffffff;
   text-align: center;
   overflow: hidden;

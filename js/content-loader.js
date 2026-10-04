@@ -823,7 +823,7 @@ const StarKidsContent = {
 
       case 'cta_banner':
         return `
-          <section class="cta-section" style="margin: 4rem 0;">
+          <section class="cta-section">
             <div class="container">
               <div class="cta-content">
                 <h2 class="cta-title">${sec.title}</h2>
