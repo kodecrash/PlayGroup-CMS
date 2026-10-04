@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: kodecrash/PlayGroup-CMS
+  # Editors sign in with email & password via Netlify Identity;
+  # Git Gateway commits their changes to the GitHub repo on their behalf.
+  name: git-gateway
   branch: main
   squash_merges: true
 
