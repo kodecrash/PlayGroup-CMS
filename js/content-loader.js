@@ -679,7 +679,9 @@ const StarKidsContent = {
         `;
 
       case 'programs_showcase':
-        const programsList = this.programs && this.programs.length ? this.programs : [
+        const programsList = (sec.programs && Array.isArray(sec.programs) && sec.programs.length)
+          ? sec.programs
+          : (this.programs && this.programs.length ? this.programs : [
           {
             title: "Toddler Programme",
             subtitle: "Age Range: 1.5 to 2 Years",
@@ -725,7 +727,7 @@ const StarKidsContent = {
               { category: "Confidence & Speech", details: "Show-and-tell, dramatic play & puppet shows" }
             ]
           }
-        ];
+        ]);
 
         const programsHtml = programsList.map((p, pIdx) => {
           const isEvenP = pIdx % 2 === 1;

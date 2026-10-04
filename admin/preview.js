@@ -324,12 +324,28 @@ const PagePreview = createClass({
           }
 
           if (type === 'programs_showcase') {
+            const progs = sec.get('programs') || [];
             return h('div', { key: index, className: 'preview-card', style: { padding: '20px', borderLeft: '4px solid var(--green-card)' } },
               badge ? h('span', { className: 'preview-badge green' }, badge) : null,
               h('h3', { style: { margin: '8px 0', color: 'var(--purple-dark)' } }, title),
-              subtitle ? h('p', { style: { color: 'var(--text-muted)', margin: '0 0 10px' } }, subtitle) : null,
-              h('div', { style: { background: 'var(--bg-page)', padding: '12px', borderRadius: '6px', fontSize: '0.85rem', color: 'var(--purple-dark)', fontWeight: '600' } },
-                '🧸 Live Programs Showcase (Toddler, PlayGroup, Nursery stages automatically embedded)'
+              subtitle ? h('p', { style: { color: 'var(--text-muted)', margin: '0 0 14px' } }, subtitle) : null,
+              progs.size ? h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '14px', marginTop: '12px' } },
+                progs.map((p, pIdx) => {
+                  const pColor = p.get('badgeColor') || 'green';
+                  return h('div', { key: pIdx, style: { background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '14px' } },
+                    h('span', { className: 'preview-badge ' + pColor, style: { fontSize: '0.75rem', marginBottom: '6px' } }, p.get('stageBadge') || 'Stage'),
+                    h('h4', { style: { margin: '4px 0', color: 'var(--purple-dark)' } }, (p.get('icon') || '👶') + ' ' + (p.get('title') || 'Programme')),
+                    h('div', { style: { fontSize: '0.8rem', color: 'var(--coral-main)', fontWeight: '600', marginBottom: '6px' } }, 'Age: ' + (p.get('ageRange') || '1.5 - 4 Yrs')),
+                    h('p', { style: { fontSize: '0.8rem', color: 'var(--text-muted)', margin: '0 0 8px', lineHeight: '1.4' } }, p.get('summary') || ''),
+                    h('div', { style: { fontSize: '0.75rem', color: '#64748b' } },
+                      h('div', null, '⏱️ ' + (p.get('timing') || '')),
+                      h('div', null, '👥 ' + (p.get('classSize') || '')),
+                      h('div', null, '💵 ' + (p.get('tuition') || ''))
+                    )
+                  );
+                })
+              ) : h('div', { style: { background: 'var(--bg-page)', padding: '12px', borderRadius: '6px', fontSize: '0.85rem', color: 'var(--purple-dark)', fontWeight: '600' } },
+                '🧸 Live Programs Showcase (Toddler, PlayGroup, Nursery stages automatically rendered)'
               )
             );
           }
@@ -401,3 +417,4 @@ if (window.CMS) {
   CMS.registerPreviewTemplate('pages', PagePreview);
   CMS.registerPreviewTemplate('global_settings', PagePreview);
 }
+

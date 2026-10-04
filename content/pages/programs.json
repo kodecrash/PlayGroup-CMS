@@ -38,7 +38,102 @@
       "type": "programs_showcase",
       "badge": "Core Stages",
       "title": "Explore Our Learning Stages",
-      "subtitle": "Carefully sequenced stages from gentle transition toddlers to confident kindergarten scholars."
+      "subtitle": "Carefully sequenced stages from gentle transition toddlers to confident kindergarten scholars.",
+      "programs": [
+        {
+          "badgeColor": "green",
+          "stageBadge": "Stage 1: Foundational Care",
+          "summary": "Our Toddler program is designed as a gentle bridge from home to the wider world. In a soothing, padded environment, toddlers discover sensory textures, practice early gross motor movement, explore expressive sounds, and build secure emotional bonds.",
+          "timing": "8:30 AM - 12:00 PM (Flexible 3 or 5 Days)",
+          "featuredImage": "assets/images/program-toddler.jpg",
+          "subtitle": "First Steps in Joyful Discovery",
+          "title": "Toddler Programme ",
+          "icon": "👶",
+          "classSize": "1:3 Teacher Ratio",
+          "tuition": "$320 / Month",
+          "ageRange": "1.5 to 2 Years",
+          "highlights": [
+            {
+              "category": "Sensory Stimulation",
+              "details": "Foam climbing, water & sand play"
+            },
+            {
+              "category": "Language Initiation",
+              "details": "Nursery rhymes, gestures & rhythm"
+            },
+            {
+              "category": "Motor Dexterity",
+              "details": "Stacking soft blocks, grasping & sorting"
+            },
+            {
+              "category": "Nurturing Care",
+              "details": "Assisted feeding & gentle routine pacing"
+            }
+          ]
+        },
+        {
+          "badgeColor": "coral",
+          "stageBadge": "Stage 2: Social Exploration",
+          "summary": "PlayGroup is the stage where communication blossoms and peer friendships take root. Children engage in vibrant creative arts, cooperative pretend-play stations, tactile modeling clay, songs, and guided toilet training independence.",
+          "timing": "8:30 AM - 12:30 PM (Mon - Fri)",
+          "featuredImage": "assets/images/program-playgroup.jpg",
+          "subtitle": "Imaginative Play & Social Friendship",
+          "title": "PlayGroup Programme",
+          "icon": "🎨",
+          "classSize": "1:4 Teacher Ratio",
+          "tuition": "$350 / Month",
+          "ageRange": "2 to 3 Years",
+          "highlights": [
+            {
+              "category": "Creative Arts",
+              "details": "Finger-painting, play-dough & color mixing"
+            },
+            {
+              "category": "Social Development",
+              "details": "Turn-taking, sharing & circle conversations"
+            },
+            {
+              "category": "Active Play",
+              "details": "Parachute games, tricycle relays & soft hurdles"
+            },
+            {
+              "category": "Self-Help Skills",
+              "details": "Handwashing, shoe cubby & toilet training"
+            }
+          ]
+        },
+        {
+          "badgeColor": "purple",
+          "stageBadge": "Stage 3: Early Academic & STEM",
+          "summary": "Our Nursery curriculum develops pre-reading phonics, numeracy logic, early scientific observation, and expressive confidence. Children thrive through interactive storytelling circles, hands-on counting labs, gardening, and dramatic theater.",
+          "timing": "8:30 AM - 1:00 PM (Mon - Fri)",
+          "featuredImage": "assets/images/program-nursery.jpg",
+          "subtitle": "STEAM Foundations & Phonics Fun",
+          "title": "Nursery Programme",
+          "icon": "📚",
+          "classSize": "1:6 Teacher Ratio",
+          "tuition": "$380 / Month",
+          "ageRange": "3 to 4 Years",
+          "highlights": [
+            {
+              "category": "Early Phonics & Letters",
+              "details": "Sound recognition, letter tracing & rhymes"
+            },
+            {
+              "category": "Math & Logic",
+              "details": "Counting counters, geometric shapes & patterns"
+            },
+            {
+              "category": "Discovery & Nature",
+              "details": "Plant growth, weather charts & simple physics"
+            },
+            {
+              "category": "Confidence & Speech",
+              "details": "Show-and-tell, dramatic play & puppet shows"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "comparison_matrix",

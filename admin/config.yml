@@ -358,13 +358,36 @@ collections:
                       - { label: "Description", name: "description", widget: "text" }
                       - { label: "Icon Emoji", name: "icon", widget: "string", default: "🌟" }
                       - { label: "Color Theme", name: "color", widget: "select", options: ["coral", "green", "purple", "yellow", "teal"], default: "coral" }
-              - label: "Programs Showcase Embed"
+              - label: "Programs Showcase (Toddler, PlayGroup, Nursery)"
                 name: "programs_showcase"
                 widget: "object"
                 fields:
                   - { label: "Section Badge", name: "badge", widget: "string", default: "Core Stages" }
                   - { label: "Section Title", name: "title", widget: "string", default: "Explore Our Learning Stages" }
                   - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+                  - label: "Programmes List (Toddler, PlayGroup, Nursery, etc.)"
+                    name: "programs"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { label: "Programme Title", name: "title", widget: "string", default: "Toddler Programme" }
+                      - { label: "Stage Badge", name: "stageBadge", widget: "string", default: "Stage 1: Foundational Care" }
+                      - { label: "Subtitle / Tagline", name: "subtitle", widget: "string", required: false }
+                      - { label: "Age Range", name: "ageRange", widget: "string", default: "1.5 to 2 Years" }
+                      - { label: "Daily Timing", name: "timing", widget: "string", default: "8:30 AM - 12:00 PM" }
+                      - { label: "Class Size / Ratio", name: "classSize", widget: "string", default: "1:3 Teacher Ratio" }
+                      - { label: "Tuition / Fee", name: "tuition", widget: "string", default: "$320 / Month" }
+                      - { label: "Color Theme", name: "badgeColor", widget: "select", options: ["green", "coral", "purple", "yellow", "teal"], default: "green" }
+                      - { label: "Emoji Icon", name: "icon", widget: "string", default: "👶" }
+                      - { label: "Featured Image", name: "featuredImage", widget: "image", default: "assets/images/program-toddler.jpg" }
+                      - { label: "Summary Description", name: "summary", widget: "text" }
+                      - label: "Key Highlights"
+                        name: "highlights"
+                        widget: "list"
+                        required: false
+                        fields:
+                          - { label: "Category / Feature", name: "category", widget: "string" }
+                          - { label: "Details", name: "details", widget: "string" }
               - label: "Comparison Matrix Table"
                 name: "comparison_matrix"
                 widget: "object"
@@ -686,3 +709,4 @@ collections:
                 fields:
                   - { label: "Section Title (Optional)", name: "title", widget: "string", required: false }
                   - { label: "Raw HTML Code", name: "html", widget: "code", default_language: "html" }
+
