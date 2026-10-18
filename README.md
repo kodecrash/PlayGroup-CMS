@@ -57,8 +57,17 @@ PlayGroup-CMS/
 
 ---
 
-## ☁️ Deployment (Netlify / Vercel / GitHub Pages)
+## ☁️ Deployment & Form Submissions (Netlify)
 
 Because everything is at the repository root:
 - **Netlify / Vercel / GitHub Pages**: Simply set **Publish Directory** to `.` (root).
 - No build command required for static hosting!
+
+### 📥 Viewing Submitted Inquiries (Netlify Forms)
+The contact form, program enrollment modal, and event RSVP forms are configured for **Netlify Forms**:
+1. When deployed on Netlify, form submissions automatically appear under:
+   - **Netlify Dashboard** ➔ **Site** ➔ **Forms** ➔ **Active Forms** (e.g., `contact-admissions`, `program-enrollment`, `event-rsvp`).
+2. You can download submissions as **CSV** or view each inquiry directly in the dashboard.
+3. To receive email alerts when someone submits the form:
+   - Go to **Site configuration** ➔ **Notifications** ➔ **Form notifications** ➔ **Add notification** ➔ **Email notification**.
+

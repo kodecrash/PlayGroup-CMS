@@ -655,33 +655,37 @@
       <h3 class="modal-title modal-event-name">Event Name</h3>
       <div class="modal-subtitle">Reserve your spots for your family (Free Admission)</div>
 
-      <form data-ajax-form data-form-type="rsvp">
+      <form data-ajax-form data-form-type="rsvp" name="event-rsvp" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="event-rsvp">
+        <p style="display: none;">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </p>
         <div class="form-group">
           <label class="form-label">Parent / Guardian Name *</label>
-          <input type="text" class="form-input" placeholder="e.g. Rachel Adams" required>
+          <input type="text" name="parent_name" class="form-input" placeholder="e.g. Rachel Adams" required>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Email Address *</label>
-            <input type="email" class="form-input" placeholder="name@email.com" required>
+            <input type="email" name="email" class="form-input" placeholder="name@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">Phone Number *</label>
-            <input type="tel" class="form-input" placeholder="(555) 000-0000" required>
+            <input type="tel" name="phone" class="form-input" placeholder="(555) 000-0000" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Child's Name & Age</label>
-            <input type="text" class="form-input" placeholder="e.g. Leo (4 yrs)">
+            <input type="text" name="child_info" class="form-input" placeholder="e.g. Leo (4 yrs)">
           </div>
           <div class="form-group">
             <label class="form-label">Number of Attendees</label>
-            <select class="form-select">
-              <option>1 Adult + 1 Child</option>
-              <option>2 Adults + 1 Child</option>
-              <option>2 Adults + 2 Children</option>
-              <option>Family (4+ People)</option>
+            <select class="form-select" name="attendees">
+              <option value="1 Adult + 1 Child">1 Adult + 1 Child</option>
+              <option value="2 Adults + 1 Child">2 Adults + 1 Child</option>
+              <option value="2 Adults + 2 Children">2 Adults + 2 Children</option>
+              <option value="Family (4+ People)">Family (4+ People)</option>
             </select>
           </div>
         </div>

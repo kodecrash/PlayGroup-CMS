@@ -119,29 +119,33 @@
       <h3 class="modal-title modal-program-name">Program Enrollment</h3>
       <div class="modal-subtitle">Reserve a spot or schedule a private campus tour</div>
 
-      <form data-ajax-form data-form-type="tour">
+      <form data-ajax-form data-form-type="tour" name="program-enrollment" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="program-enrollment">
+        <p style="display: none;">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </p>
         <div class="form-group">
           <label class="form-label">Parent / Guardian Name *</label>
-          <input type="text" class="form-input" placeholder="e.g. Jessica Parker" required>
+          <input type="text" name="parent_name" class="form-input" placeholder="e.g. Jessica Parker" required>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Email Address *</label>
-            <input type="email" class="form-input" placeholder="jessica@email.com" required>
+            <input type="email" name="email" class="form-input" placeholder="jessica@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">Phone Number *</label>
-            <input type="tel" class="form-input" placeholder="(555) 000-0000" required>
+            <input type="tel" name="phone" class="form-input" placeholder="(555) 000-0000" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Child's Name & Age</label>
-            <input type="text" class="form-input" placeholder="e.g. Oliver (2.5 yrs)">
+            <input type="text" name="child_info" class="form-input" placeholder="e.g. Oliver (2.5 yrs)">
           </div>
           <div class="form-group">
             <label class="form-label">Select Programme *</label>
-            <select class="form-select" id="modalProgramSelect">
+            <select class="form-select" id="modalProgramSelect" name="program">
               <option value="Toddler">Toddler Programme (1.5 - 2 Years)</option>
               <option value="PlayGroup">PlayGroup Programme (2 - 3 Years)</option>
               <option value="Nursery">Nursery Programme (3 - 4 Years)</option>
@@ -151,7 +155,7 @@
         </div>
         <div class="form-group">
           <label class="form-label">Preferred Start Date / Notes</label>
-          <textarea class="form-textarea" rows="3"
+          <textarea class="form-textarea" rows="3" name="notes"
             placeholder="Tell us about any specific preferences or schedule questions..."></textarea>
         </div>
         <button type="submit" class="btn btn-coral" style="width: 100%; margin-top: 0.5rem;">Submit Admissions

@@ -145,49 +145,55 @@
             We'd love to show you around our sensory playrooms, introducing you to our educators and answering your questions.
           </p>
 
-          <form data-ajax-form data-form-type="tour" id="contactForm">
+          <form data-ajax-form data-form-type="tour" id="contactForm" name="contact-admissions" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <!-- Netlify Form Hidden Configuration -->
+            <input type="hidden" name="form-name" value="contact-admissions">
+            <p style="display: none;">
+              <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label">Parent / Guardian Name *</label>
-                <input type="text" class="form-input" placeholder="e.g. Jennifer Smith" required>
+                <label class="form-label" for="parentName">Parent / Guardian Name *</label>
+                <input type="text" id="parentName" name="parent_name" class="form-input" placeholder="e.g. Jennifer Smith" required>
               </div>
               <div class="form-group">
-                <label class="form-label">Email Address *</label>
-                <input type="email" class="form-input" placeholder="name@email.com" required>
+                <label class="form-label" for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@email.com" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label">Phone Number *</label>
-                <input type="tel" class="form-input" placeholder="(555) 123-4567" required>
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567" required>
               </div>
               <div class="form-group">
-                <label class="form-label">Child's Name & Age *</label>
-                <input type="text" class="form-input" placeholder="e.g. Mia (3.5 yrs)" required>
+                <label class="form-label" for="childInfo">Child's Name & Age *</label>
+                <input type="text" id="childInfo" name="child_info" class="form-input" placeholder="e.g. Mia (3.5 yrs)" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label">Interested Program</label>
-                <select class="form-select">
-                  <option>Toddler Explorers (1.5 - 3 yrs)</option>
-                  <option>Pre-K Creative Arts (3 - 4.5 yrs)</option>
-                  <option>Kindergarten Prep (4.5 - 6 yrs)</option>
-                  <option>Extended Care Plus (Full Day)</option>
-                  <option>Summer Discovery Camp</option>
+                <label class="form-label" for="programSelect">Interested Program</label>
+                <select id="programSelect" name="program" class="form-select">
+                  <option value="Toddler Explorers (1.5 - 3 yrs)">Toddler Explorers (1.5 - 3 yrs)</option>
+                  <option value="Pre-K Creative Arts (3 - 4.5 yrs)">Pre-K Creative Arts (3 - 4.5 yrs)</option>
+                  <option value="Kindergarten Prep (4.5 - 6 yrs)">Kindergarten Prep (4.5 - 6 yrs)</option>
+                  <option value="Extended Care Plus (Full Day)">Extended Care Plus (Full Day)</option>
+                  <option value="Summer Discovery Camp">Summer Discovery Camp</option>
                 </select>
               </div>
               <div class="form-group">
-                <label class="form-label">Preferred Tour Date</label>
-                <input type="date" class="form-input">
+                <label class="form-label" for="tourDate">Preferred Tour Date</label>
+                <input type="date" id="tourDate" name="preferred_date" class="form-input">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label">Any Questions or Special Requirements?</label>
-              <textarea class="form-textarea" placeholder="Tell us about your child's interests, dietary preferences, or any specific questions..."></textarea>
+              <label class="form-label" for="questionsNotes">Any Questions or Special Requirements?</label>
+              <textarea id="questionsNotes" name="notes" class="form-textarea" placeholder="Tell us about your child's interests, dietary preferences, or any specific questions..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-coral" style="width: 100%;">
@@ -342,8 +348,12 @@
           <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
             Subscribe for school activities, events, and parenting tips.
           </p>
-          <form class="newsletter-form" data-ajax-form data-form-type="newsletter">
-            <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+          <form class="newsletter-form" data-ajax-form data-form-type="newsletter" name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="newsletter">
+            <p style="display: none;">
+              <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <input type="email" name="email" class="newsletter-input" placeholder="Your email address..." required>
             <button type="submit" class="newsletter-btn">Join</button>
           </form>
         </div>

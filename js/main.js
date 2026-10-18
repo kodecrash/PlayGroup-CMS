@@ -289,10 +289,10 @@ function initAccordion() {
    7. FORM HANDLING & TOAST ALERTS
    -------------------------------------------------------------------------- */
 function initForms() {
-  // Generic form submission handler
+  // Generic form submission handler (with Netlify Forms support)
   const forms = document.querySelectorAll('form[data-ajax-form]');
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // Simple validation check
@@ -313,22 +313,70 @@ function initForms() {
         return;
       }
 
-      // Success
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerText : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Submitting...';
+      }
+
       const formType = form.getAttribute('data-form-type') || 'inquiry';
       let message = 'Thank you! Your inquiry has been submitted. We will contact you soon.';
 
       if (formType === 'rsvp') {
         message = 'Registration Confirmed! We look forward to seeing your family at the event.';
-        const modal = form.closest('.modal-overlay');
-        if (modal) closeModal(modal);
       } else if (formType === 'newsletter') {
         message = 'Thank you for subscribing to our Kindergarten newsletter!';
       } else if (formType === 'tour') {
         message = 'Campus Tour Requested! Our admissions coordinator will reach out shortly.';
       }
 
-      showToast(message, 'success');
-      form.reset();
+      try {
+        const formData = new FormData(form);
+        if (!formData.get('form-name')) {
+          formData.append('form-name', form.getAttribute('name') || 'contact-form');
+        }
+
+        const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+        if (!isLocalHost) {
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+          });
+
+          if (!response.ok) {
+            throw new Error(`Netlify form submission failed: ${response.status}`);
+          }
+        } else {
+          // Local development fallback: log and persist in localStorage so submissions can be reviewed locally
+          const entries = Object.fromEntries(formData.entries());
+          console.info('[Netlify Forms Local] Submitted data:', entries);
+          try {
+            const history = JSON.parse(localStorage.getItem('sk_form_submissions') || '[]');
+            history.push({
+              form: form.getAttribute('name') || formType,
+              date: new Date().toISOString(),
+              data: entries
+            });
+            localStorage.setItem('sk_form_submissions', JSON.stringify(history));
+          } catch (_) {}
+        }
+
+        showToast(message, 'success');
+        const modal = form.closest('.modal-overlay');
+        if (modal) closeModal(modal);
+        form.reset();
+      } catch (err) {
+        console.error('Submission error:', err);
+        showToast('Sorry, there was an issue sending your request. Please try again.', 'info');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      }
     });
   });
 }
